@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LuneMp4</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- VIDÉO DE FOND & OVERLAY (Uniquement ici) -->
+  <video id="bg-video" loop playsinline preload="none" class="bg-video">
+  <source src="assets/bg.mp4" type="video/mp4">
+</video>
+  <div class="bg-overlay"></div>
+
+  <!-- ÉCRAN D'ENTRÉE -->
+  <div id="enter" class="enter">
+  <div class="enter-card">
+    <!-- Remplace l'ancienne div par cette balise img -->
+    <img class="enter-avatar" src="assets/avatar.png" alt="Logo">
+    <div class="enter-title">LuneMp4</div>
+    <div class="enter-sub">Clique pour entrer</div>
+  </div>
+</div>
+
+  <div id="particles"></div>
+  <button id="sound" class="sound" aria-label="Activer ou couper la musique">♫</button>
+
+  <!-- CARTE PRINCIPALE -->
+  <main class="page">
+    <section class="profile-card">
+      <div class="avatar-wrap">
+        <img class="avatar" src="assets/avatar.png" alt="Avatar">
+        <span class="status"></span>
+      </div>
+
+      <div class="identity">
+        <h1>Lune <span class="verified">✓</span></h1>
+        <p class="handle">@Lunemp4</p>
+      </div>
+
+      <p class="bio">Créateur de contenu</p>
+
+      <div class="links">
+        <a class="link" href="https://www.instagram.com/lune_mp4/" target="_blank" rel="noopener">
+          <span class="icon"><img src="icons/instagram.svg" alt="Instagram"></span>
+          <span>Instagram</span>
+          <span class="arrow">↗</span>
+        </a>
+
+        <a class="link" href="https://discord.com/users/651794224383000576" target="_blank" rel="noopener">
+          <span class="icon"><img src="icons/discord.svg" alt="Discord"></span>
+          <span>Discord</span>
+          <span class="arrow">↗</span>
+        </a>
+
+        <a class="link" href="https://www.youtube.com/@Lunemp4" target="_blank" rel="noopener">
+          <span class="icon"><img src="icons/youtube.svg" alt="YouTube"></span>
+          <span>YouTube</span>
+          <span class="arrow">↗</span>
+        </a>
+
+        <a class="link" href="https://www.tiktok.com/@lune_mp4" target="_blank" rel="noopener">
+          <span class="icon"><img src="icons/tiktokt.svg" alt="TikTok"></span>
+          <span>TikTok</span>
+          <span class="arrow">↗</span>
+        </a>
+      </div>
+
+      <footer>Lunemp4 Exclusive</footer>
+    </section>
+  </main>
+
+  <audio id="music" loop preload="none" src="assets/music.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
